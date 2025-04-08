@@ -1,10 +1,6 @@
+# Task 2
 
-# Task
-first_name = input("Enter your first name: ")
-last_name = input("Enter your last name: ")
-
-
-full_name = first_name + " " + last_name
+list = sum(range(1,51))
+print("The sum of numbers from 1 to 50 is", list)
 
 
-print(f"Hello,\n {full_name}! \n  Welcome to the Python program.")

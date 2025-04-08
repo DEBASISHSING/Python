@@ -1,22 +1,8 @@
-# ASSIGNMENT 1
+# Task1
+num = int(input("Enter a number: "))
 
-a = float(input("Enter the first number: "))
-b = float(input("Enter the first number: "))
+if num % 2 == 0:
 
-# Addition
-
-c = a + b
-print("Addition: ",c)
-
-#Subtraction
-c = a - b
-print("Subtraction: ",c)
-
-#Multiplication
-c = a * b
-print("Multiplication: ",c)
-
-#Division
-c = a / b
-print("Division: ",c)
-
+    print(f"{num} is an even number.")
+else:
+    print(f"{num} is an odd number.")
