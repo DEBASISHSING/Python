@@ -1,8 +1,15 @@
 # Task 2
 
-First_name =input("Enter your first name: ") 
-Second_name =input("Enter your Second name: ") 
 
-full_name = First_name + ' ' + Second_name
+import math
 
-print(f"Hello \n    {full_name}\n       Welcome to the Python program!")
+num = float(input("Enter a number: "))
+
+sqrt = math.sqrt(num)
+log = math.log(num)
+sine = math.sin(num)
+
+
+print(f"Square root: {sqrt}")
+print(f"Logarithm: {log}")
+print(f"Sine: {sine}")
