@@ -1,15 +1,19 @@
 # Task 2
 
+#---------->>>>>>
+write_text = input("Enter text to write to the file: ")
+with open("output.txt", "w") as file:
+    file.write(write_text  +"\n" )
+print("Data successfully written to output.txt.")
 
-import math
+#---------->>>>>>>
+append_text = input("\nEnter additional text to append: ")
+with open("output.txt", "a") as file:
+    file.write(append_text + "\n")
+print("Data successfully appended.")
 
-num = float(input("Enter a number: "))
-
-sqrt = math.sqrt(num)
-log = math.log(num)
-sine = math.sin(num)
-
-
-print(f"Square root: {sqrt}")
-print(f"Logarithm: {log}")
-print(f"Sine: {sine}")
+#---------->>>>>>>>
+print("\nFinal content of output.txt:")
+with open("output.txt", 'r') as file:
+    Write_appand = file.read()
+    print(Write_appand )
