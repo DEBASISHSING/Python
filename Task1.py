@@ -1,13 +1,23 @@
-#Task 1
+#Task 1 :  Read a File and Handle Errors
 
-file1 = "my_file.txt"
+# Define the filename
+filename = "sample.txt"
 
-with open(file1, 'r') as file:
-    print("Reading file content: ")
-    line_number = 1
-    for line in file:
-        print(f"Line {line_number}: {line.strip()}")
-        line_number += 1
+# open the file and read
+try:
+    with open(filename, 'r') as file:
+        print("Reading file content:")
+        line_number = 1
+        for line in file:
+            print(f"Line {line_number}: {line.strip()}")
+            line_number += 1
+# when the file is not found   
+except FileNotFoundError:
+    print(f"Error: The file '{filename}' was not found.")
+
+
+
+
 
 
 
