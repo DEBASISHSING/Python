@@ -1,19 +1,18 @@
-#Task 1 :  Read a File and Handle Errors
+# Creates a dictionary where student names are keys and their marks are values.
+student_marks = {"Debasish": 80, "Ashish": 70, "Subhasish": 60, "Sish": 50}
 
-# Define the filename
-filename = "sample.txt"
+# Asks the user to input a student's name.
+name = input("Enter the student's name: ")
 
-# open the file and read
-try:
-    with open(filename, 'r') as file:
-        print("Reading file content:")
-        line_number = 1
-        for line in file:
-            print(f"Line {line_number}: {line.strip()}")
-            line_number += 1
-# when the file is not found   
-except FileNotFoundError:
-    print(f"Error: The file '{filename}' was not found.")
+# Retrieves and displays the corresponding marks,  If the student’s name is not found, display an appropriate message.
+
+marks = student_marks.get(name)
+if marks:
+    print(f"{name}'s marks: {marks}")
+else:
+    print("Student not found.")
+
+
 
 
 
